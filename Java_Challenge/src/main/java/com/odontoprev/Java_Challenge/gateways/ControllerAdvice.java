@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class ControllerAdvice {
 
     @ExceptionHandler
-    public ResponseEntity trataPropertyValueException(PropertyValueException exception) {
+    public ResponseEntity HandlePropertyValueException(PropertyValueException exception) {
         return ResponseEntity.badRequest().build();
     }
 }
