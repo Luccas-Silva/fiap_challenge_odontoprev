@@ -20,8 +20,8 @@ public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private String cpf_cnpj;
-    
+    private String idUsuario;
+
     private String nome;
     private Date dataNascimento;
     private String Email;
