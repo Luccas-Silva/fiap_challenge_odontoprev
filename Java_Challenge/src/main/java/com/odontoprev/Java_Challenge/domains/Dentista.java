@@ -18,6 +18,7 @@ public class Dentista  {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String cpf_cnpj;
+
     private String cepClinica;
     private String nomeClinica;
     private String tipoClinica;

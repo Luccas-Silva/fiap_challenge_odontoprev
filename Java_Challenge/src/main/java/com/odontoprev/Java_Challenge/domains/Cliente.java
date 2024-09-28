@@ -18,6 +18,7 @@ public class Cliente  {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String cpf_cnpj;
+
     private String cep;
     private String tipoPlano;
 
