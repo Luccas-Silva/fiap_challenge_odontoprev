@@ -1,3 +1,0 @@
-# Fiap - Challenge Odontoprev 
-
-## Diagramas
