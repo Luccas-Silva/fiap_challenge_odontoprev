@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Builder
@@ -16,7 +17,6 @@ import java.util.Date;
 public class Dentista  {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
     private String cpf_cnpj;
 
     private String cepClinica;
@@ -26,7 +26,10 @@ public class Dentista  {
     private String siteRedesSocial;
 
     @OneToOne(cascade = CascadeType.ALL)
-    Usuario usuario;
+    private Usuario usuario;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<Consulta> consultas;
 
 }
 

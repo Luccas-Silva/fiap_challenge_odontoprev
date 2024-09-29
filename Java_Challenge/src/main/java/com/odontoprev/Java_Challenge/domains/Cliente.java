@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Builder
@@ -16,13 +17,15 @@ import java.util.Date;
 public class Cliente  {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
     private String cpf_cnpj;
 
     private String cep;
     private String tipoPlano;
 
     @OneToOne(cascade = CascadeType.ALL)
-    Usuario usuario;
+    private Usuario usuario;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<Consulta> consultas;
 
 }

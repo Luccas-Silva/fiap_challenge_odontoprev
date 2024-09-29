@@ -25,8 +25,8 @@ public class Consulta {
     private Double valorMedioConsulta;
 
     @OneToOne(cascade = CascadeType.ALL)
-    Dentista dentista;
+    private Dentista dentista;
 
     @OneToOne(cascade = CascadeType.ALL)
-    Cliente cliente;
+    private Cliente cliente;
 }
