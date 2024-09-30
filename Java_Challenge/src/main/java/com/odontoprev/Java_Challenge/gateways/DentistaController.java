@@ -2,13 +2,11 @@ package com.odontoprev.Java_Challenge.gateways;
 
 import com.odontoprev.Java_Challenge.domains.Cliente;
 import com.odontoprev.Java_Challenge.domains.Dentista;
+import com.odontoprev.Java_Challenge.gateways.requests.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
@@ -28,12 +26,13 @@ public class DentistaController {
         Map<String, String> comandos = Map.of(
                 "Listar Dentistas", "/dentistas",
                 "Obter Dentista", "/{dentistaId}",
-
-                "Atualiza Email", "/{clienteId}/email",
-                "Atualiza Celular", "/{clienteId}/celular",
-                "Atualiza CEP", "/{clienteId}/cep",
-                "Atualiza Tipo-Plano", "/{clienteId}/tipo-plano",
-
+                "Atualiza Email", "/{dentistaId}/email",
+                "Atualiza Celular", "/{dentistaId}/celular",
+                "Atualiza CEP Clinica","/{dentistaId}/cep-clinica",
+                "Atualiza Nome Clinica","/{dentistaId}/nome-clinica",
+                "Atualiza Tipo Clinica","/{dentistaId}/tipo-clinica",
+                "Atualiza Alvara Funcionamento","/{dentistaId}/alvara-funcionamento",
+                "Atualiza Rede Social - Site","/{dentistaId}/redesocial-site",
                 "Criar Dentista", " "
         );
         return ResponseEntity.ok(comandos);
@@ -49,6 +48,46 @@ public class DentistaController {
     public ResponseEntity<Optional<Dentista>> getDentista(@PathVariable String dentistaId) {
         Optional<Dentista> optionalDentista = dentistaRepository.findById(dentistaId);
         return ResponseEntity.ok(optionalDentista);
+    }
+
+    @PatchMapping("/{dentistaId}/email")
+    public ResponseEntity<DentistaPatchEmail> patchEmail(@PathVariable String dentistaId, @RequestBody DentistaPatchEmail email) {
+        return ResponseEntity.ok(email);
+    }
+
+    @PatchMapping("/{dentistaId}/celular")
+    public ResponseEntity<DentistaPatchCelular> patchCelular(@PathVariable String dentistaId, @RequestBody DentistaPatchCelular celular) {
+        return ResponseEntity.ok(celular);
+    }
+
+    @PatchMapping("/{dentistaId}/cep-clinica")
+    public ResponseEntity<DentistaPatchCepClinica> patchCepClinica(@PathVariable String dentistaId, @RequestBody DentistaPatchCepClinica cepClinica) {
+        return ResponseEntity.ok(cepClinica);
+    }
+
+    @PatchMapping("/{dentistaId}/nome-clinica")
+    public ResponseEntity<DentistaPatchNomeClinica> patchNomeClinica(@PathVariable String dentistaId, @RequestBody DentistaPatchNomeClinica nomeClinica) {
+        return ResponseEntity.ok(nomeClinica);
+    }
+
+    @PatchMapping("/{dentistaId}/tipo-clinica")
+    public ResponseEntity<DentistaPatchTipoClinica> patchTipoClinica(@PathVariable String dentistaId, @RequestBody DentistaPatchTipoClinica tipoClinica) {
+        return ResponseEntity.ok(tipoClinica);
+    }
+
+    @PatchMapping("/{dentistaId}/alvara-funcionamento")
+    public ResponseEntity<DentistaPatchAlvaraFuncionamento> patchAlvaraFuncionamento(@PathVariable String dentistaId, @RequestBody DentistaPatchAlvaraFuncionamento alvaraFuncionamento) {
+        return ResponseEntity.ok(alvaraFuncionamento);
+    }
+
+    @PatchMapping("/{dentistaId}/redesocial-site")
+    public ResponseEntity<DentistaPatchRedeSocialSite> patchAlvaraRedeSocialSite(@PathVariable String dentistaId, @RequestBody DentistaPatchRedeSocialSite siteRedesSocial) {
+        return ResponseEntity.ok(siteRedesSocial);
+    }
+
+    @PostMapping
+    public Dentista PostDentista(@RequestBody Dentista dentista) {
+        return dentistaRepository.save(dentista);
     }
 
 }
