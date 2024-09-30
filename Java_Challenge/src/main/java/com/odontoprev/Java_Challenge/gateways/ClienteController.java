@@ -1,12 +1,10 @@
 package com.odontoprev.Java_Challenge.gateways;
 
 import com.odontoprev.Java_Challenge.domains.Cliente;
-import com.odontoprev.Java_Challenge.domains.Usuario;
 import com.odontoprev.Java_Challenge.gateways.requests.ClientePatchCEP;
 import com.odontoprev.Java_Challenge.gateways.requests.ClientePatchCelular;
 import com.odontoprev.Java_Challenge.gateways.requests.ClientePatchTipoPlano;
 import com.odontoprev.Java_Challenge.gateways.requests.ClientePatchEmail;
-import com.odontoprev.Java_Challenge.usecases.ClienteCadastrado;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -23,7 +21,6 @@ import java.util.Optional;
 @Validated
 public class ClienteController {
 
-    private final ClienteCadastrado clienteCadastrado;
     private final ClienteRepository clienteRepository;
 
     @GetMapping
