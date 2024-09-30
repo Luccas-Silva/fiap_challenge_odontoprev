@@ -28,7 +28,7 @@ public class ClienteController {
 
         Map<String, String> comandos = Map.of(
                 "Listar Clientes", "/clientes",
-                "Obter Cliente", "/cliente/{clienteId}",
+                "Obter Cliente", "/{clienteId}",
                 "Atualiza Email", "/{clienteId}/email",
                 "Atualiza Celular", "/{clienteId}/celular",
                 "Atualiza CEP", "/{clienteId}/cep",
