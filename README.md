@@ -14,5 +14,3 @@
 ## Diagrama de Relacionamento (DER)
 
 ## Link Vídeo da Proposta Tecnológica
-
-## Documento de teste via Postman    
