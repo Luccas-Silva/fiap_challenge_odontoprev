@@ -44,6 +44,20 @@ Após realizar as alterações, salve o arquivo e execute a aplicação. A aplic
 
 ## Listagem de endpoints (Doc API)
 
+### Usuários
+* **GET /users:** Lista todos os usuários.
+* **GET /users/{id}**: Obtém os detalhes de um usuário específico.
+* **POST /users:** Cria um novo usuário.
+* **PUT /users/{id}**: Atualiza os dados de um usuário.
+* **DELETE /users/{id}**: Deleta um usuário.
+
+### Produtos
+* **GET /products:** Lista todos os produtos.
+* **GET /products/{id}**: Obtém os detalhes de um produto específico.
+* **POST /products:** Cria um novo produto.
+* **PUT /products/{id}**: Atualiza os dados de um produto.
+* **DELETE /products/{id}**: Deleta um produto.
+
 ## Link Vídeo da Proposta Tecnológica
 
 ## Documento de teste via Postman    
