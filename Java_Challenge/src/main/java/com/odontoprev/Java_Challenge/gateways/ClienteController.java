@@ -27,12 +27,9 @@ public class ClienteController {
     public ResponseEntity<Map<String, String>> comandosCliente() {
 
         Map<String, String> comandos = Map.of(
-                "Listar Clientes", "/clientes",
-                "Obter Cliente", "/{clienteId}",
-                "Atualiza Email", "/{clienteId}/email",
-                "Atualiza Celular", "/{clienteId}/celular",
-                "Atualiza CEP", "/{clienteId}/cep",
-                "Atualiza Tipo-Plano", "/{clienteId}/tipo-plano",
+                "Listar Clientes", "/dentistas",
+                "Obter Cliente", "/{dentistaId}",
+                "Deletar Cliente", "/{dentistaId}",
                 "Criar Cliente", " "
         );
         return ResponseEntity.ok(comandos);
@@ -71,9 +68,19 @@ public class ClienteController {
     }
 
     @PostMapping
-    public Cliente PostCliente(@RequestBody Cliente cliente) {
+    public Cliente postCliente(@RequestBody Cliente cliente) {
         return clienteRepository.save(cliente);
     }
 
+    @DeleteMapping("/{clienteId}")
+    public ResponseEntity<Optional<Cliente>> deleteCliente(@PathVariable String clienteId) {
+        Optional<Cliente> optionalCliente = clienteRepository.findById(clienteId);
+        if (optionalCliente.isPresent()) {
+            clienteRepository.delete(optionalCliente.get());
+            return ResponseEntity.noContent().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
 
 }

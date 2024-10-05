@@ -1,6 +1,7 @@
 package com.odontoprev.Java_Challenge.gateways;
 
 import com.odontoprev.Java_Challenge.domains.Cliente;
+import com.odontoprev.Java_Challenge.domains.Consulta;
 import com.odontoprev.Java_Challenge.domains.Dentista;
 import com.odontoprev.Java_Challenge.gateways.requests.*;
 import lombok.RequiredArgsConstructor;
@@ -26,13 +27,7 @@ public class DentistaController {
         Map<String, String> comandos = Map.of(
                 "Listar Dentistas", "/dentistas",
                 "Obter Dentista", "/{dentistaId}",
-                "Atualiza Email", "/{dentistaId}/email",
-                "Atualiza Celular", "/{dentistaId}/celular",
-                "Atualiza CEP Clinica","/{dentistaId}/cep-clinica",
-                "Atualiza Nome Clinica","/{dentistaId}/nome-clinica",
-                "Atualiza Tipo Clinica","/{dentistaId}/tipo-clinica",
-                "Atualiza Alvara Funcionamento","/{dentistaId}/alvara-funcionamento",
-                "Atualiza Rede Social - Site","/{dentistaId}/redesocial-site",
+                "Deletar Dentista", "/{dentistaId}",
                 "Criar Dentista", " "
         );
         return ResponseEntity.ok(comandos);
@@ -86,8 +81,19 @@ public class DentistaController {
     }
 
     @PostMapping
-    public Dentista PostDentista(@RequestBody Dentista dentista) {
+    public Dentista postDentista(@RequestBody Dentista dentista) {
         return dentistaRepository.save(dentista);
+    }
+
+    @DeleteMapping("/{dentistaId}")
+    public ResponseEntity<Optional<Dentista>> deleteDentista(@PathVariable String dentistaId) {
+        Optional<Dentista> optionalDentista = dentistaRepository.findById(dentistaId);
+        if (optionalDentista.isPresent()) {
+            dentistaRepository.delete(optionalDentista.get());
+            return ResponseEntity.noContent().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 
 }

@@ -1,11 +1,9 @@
 package com.odontoprev.Java_Challenge.gateways;
 
+import com.odontoprev.Java_Challenge.domains.Cliente;
 import com.odontoprev.Java_Challenge.domains.Consulta;
 import com.odontoprev.Java_Challenge.domains.Dentista;
-import com.odontoprev.Java_Challenge.gateways.requests.ConsultaPatchDateConsulta;
-import com.odontoprev.Java_Challenge.gateways.requests.ConsultaPatchTipoConsulta;
-import com.odontoprev.Java_Challenge.gateways.requests.ConsultaPatchValorConsulta;
-import com.odontoprev.Java_Challenge.gateways.requests.DentistaPatchEmail;
+import com.odontoprev.Java_Challenge.gateways.requests.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -27,11 +25,9 @@ public class ConsultaController {
     public ResponseEntity<Map<String, String>> comandosConsulta() {
 
         Map<String, String> comandos = Map.of(
-                "Listar Consultas", "/consultas",
-                "Obter Consulta", "/{consultaId}",
-                "Atualiza Date Consulta", "/{consultaId}/date-consulta",
-                "Atualiza Tipo Consulta", "/{consultaId}/tipo-consulta",
-                "Atualiza Valor Consulta", "/{consultaId}/valor-consulta",
+                "Listar Consultas", "/dentistas",
+                "Obter Consulta", "/{dentistaId}",
+                "Deletar Consulta", "/{dentistaId}",
                 "Criar Consulta", " "
         );
         return ResponseEntity.ok(comandos);
@@ -65,8 +61,19 @@ public class ConsultaController {
     }
 
     @PostMapping
-    public Consulta PostConsulta(@RequestBody Consulta consulta) {
+    public Consulta postConsulta(@RequestBody Consulta consulta) {
         return consultaRepository.save(consulta);
+    }
+
+    @DeleteMapping("/{consultaId}")
+    public ResponseEntity<Optional<Consulta>> deleteConsulta(@PathVariable String consultaId) {
+        Optional<Consulta> optionalConsulta = consultaRepository.findById(consultaId);
+        if (optionalConsulta.isPresent()) {
+            consultaRepository.delete(optionalConsulta.get());
+            return ResponseEntity.noContent().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 
 }
