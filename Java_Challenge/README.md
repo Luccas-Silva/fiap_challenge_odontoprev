@@ -52,20 +52,29 @@ Após realizar as alterações, salve o arquivo e execute a aplicação. A aplic
 
 ## Listagem de endpoints (Doc API)
 
-### Usuários
-* **GET /users:** Lista todos os usuários.
-* **GET /users/{id}**: Obtém os detalhes de um usuário específico.
-* **POST /users:** Cria um novo usuário.
-* **PUT /users/{id}**: Atualiza os dados de um usuário.
-* **DELETE /users/{id}**: Deleta um usuário.
+### Cliente
+* **GET /cliente:** Listagem de endpoints
+* **GET /cliente/clientes**: Listar Clientes
+* **GET /cliente/{clienteId}**: Obter Cliente
+* **POST /cliente:** Criar Cliente
+* **DELETE /cliente/{clienteId}**: Deletar Cliente
 
-### Produtos
-* **GET /products:** Lista todos os produtos.
-* **GET /products/{id}**: Obtém os detalhes de um produto específico.
-* **POST /products:** Cria um novo produto.
-* **PUT /products/{id}**: Atualiza os dados de um produto.
-* **DELETE /products/{id}**: Deleta um produto.
+### Dentista
+* **GET /dentista:** Listagem de endpoints
+* **GET /dentista/dentistas**: Listar Dentistas
+* **GET /dentista/{dentistaId}**: Obter Dentista
+* **POST /dentista:** Criar Dentista
+* **DELETE /dentista/{dentistaId}**: Deletar Dentista
 
-## Link Vídeo da Proposta Tecnológica
+### Consulta
+* **GET /consulta:** Listagem de endpoints
+* **GET /consulta/consultas**: Listar Consultas
+* **GET /consulta/{consultaId}**: Obter Consulta
+* **POST /consulta:** Criar Consulta
+* **DELETE /consulta/{consultaId}**: Deletar Consulta
 
-## Documento de teste via Postman    
+## Vídeo da Proposta Tecnológica
+### Link:
+
+## Documento de teste via Postman   
+### Link: https://documenter.getpostman.com/view/20953146/2sAXxMgZcE
