@@ -3,7 +3,6 @@
     public class DentistaEntity
     {
         private string cpf_cnpj;
-
         private string cepClinica;
         private string nomeClinica;
         private string tipoClinica;

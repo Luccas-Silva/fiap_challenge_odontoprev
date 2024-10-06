@@ -2,9 +2,9 @@
 {
     public class ClienteEntity
     {
-        private String cpf_cnpj { get; set; }
-        private String cep { get; set; }
-        private String tipoPlano { get; set; }
+        private string cpf_cnpj { get; set; }
+        private string cep { get; set; }
+        private string tipoPlano { get; set; }
 
         private UsuarioEntity usuario { get; set; }
         private List<ConsultaEntity> consultas { get; set; } 
