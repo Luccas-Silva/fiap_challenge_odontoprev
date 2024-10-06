@@ -1,4 +1,5 @@
 ﻿using Challenge.API.Domains.Entities;
+using Challenge.API.Infrastructure.Data.AppData;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,15 +9,12 @@ namespace Challenge.API.Controllers
     [ApiController]
     public class DentistaController : ControllerBase
     {
-        private List<DentistaEntity> _dentistas;
-        public DentistaController() 
+        
+        private readonly ApplicationContext _context;
+
+        public DentistaController(ApplicationContext _context) 
         {
-            _dentistas = new List<DentistaEntity> {
-                new DentistaEntity {cpf_cnpj = "1"},
-                new DentistaEntity {cpf_cnpj = "2"},
-                new DentistaEntity {cpf_cnpj = "3"},
-                new DentistaEntity {cpf_cnpj = "4"},
-            };
+            _context = _context;
         }
 
         [HttpGet]
@@ -29,29 +27,40 @@ namespace Challenge.API.Controllers
         [HttpGet("dentistas")]
         public IActionResult GetListDentista()
         {
-            return Ok(_dentistas);
+            var dentistas = _context.Dentista.ToList();
+            return Ok(dentistas);
         }
 
         [HttpGet("{cpf_cnpj}")]
         public IActionResult GetDentistaId(string cpf_cnpj)
         {
-            var dentista = _dentistas.FirstOrDefault(x => x.cpf_cnpj == cpf_cnpj);
+            var dentista = _context.Dentista.FirstOrDefault(x => x.cpf_cnpj == cpf_cnpj);
             return Ok(dentista);
         }
 
         [HttpPost]
         public IActionResult PostDentista([FromBody] DentistaEntity dentista)
         {
-            _dentistas.Add(dentista);
+            _context.Dentista.Add(dentista);
+            _context.SaveChanges();
+
             return Ok(dentista);
         }
 
         [HttpDelete("{cpf_cnpj}")]
         public IActionResult DeleteDentista(string cpf_cnpj)
         {
-            var dentista = _dentistas.FirstOrDefault(x => x.cpf_cnpj == cpf_cnpj);
-            _dentistas.Remove(dentista);
-            return Ok();
+            var dentista = _context.Dentista.FirstOrDefault(x => x.cpf_cnpj == cpf_cnpj);
+
+            if (dentista is not null) 
+            {
+                _context.Dentista.Remove(dentista);
+                _context.SaveChanges();
+
+                return Ok(dentista);
+            }
+            return BadRequest();
+
         }
 
     }

@@ -9,7 +9,7 @@ namespace Challenge.API.Domains.Entities
     {
         [Key]
         public string idConsulta { get; set; }
-        public Date dateConsulta { get; set; }
+        public DateTime dateConsulta { get; set; }
         public string tipoConsulta { get; set; }
         public double valorMedioConsulta { get; set; }
 
