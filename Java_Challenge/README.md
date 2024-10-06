@@ -6,7 +6,7 @@
 - Bruno Burian – RM 552863
 
 ## Sumário
-- [Objetivo do Projeto](#objetivo-do-projeto)
+- [Objetivo do Projeto](#projeto-fairytooth-plataforma-de-gestão-da-saúde-bucal-personalizada)
 - [Diagrama de Classes](#diagrama-de-classes)
 - [Diagrama de Relacionamento (DER)](#diagrama-de-relacionamento-der)
 - [Instrução para rodar a aplicação](#instrução-para-rodar-a-aplicação)
