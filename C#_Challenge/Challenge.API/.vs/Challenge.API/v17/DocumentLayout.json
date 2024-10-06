@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.API\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB3CEF26-8C26-41EF-8A2A-C66C46B5C70F}|Challenge.API.csproj|c:\\users\\lucccas silva\\onedrive\\\u00E1rea de trabalho\\programas\\fiap_challenge_odontoprev\\c#_challenge\\challenge.api\\controllers\\dentistacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB3CEF26-8C26-41EF-8A2A-C66C46B5C70F}|Challenge.API.csproj|solutionrelative:controllers\\dentistacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB3CEF26-8C26-41EF-8A2A-C66C46B5C70F}|Challenge.API.csproj|c:\\users\\lucccas silva\\onedrive\\\u00E1rea de trabalho\\programas\\fiap_challenge_odontoprev\\c#_challenge\\challenge.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB3CEF26-8C26-41EF-8A2A-C66C46B5C70F}|Challenge.API.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB3CEF26-8C26-41EF-8A2A-C66C46B5C70F}|Challenge.API.csproj|c:\\users\\lucccas silva\\onedrive\\\u00E1rea de trabalho\\programas\\fiap_challenge_odontoprev\\c#_challenge\\challenge.api\\controllers\\consultacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB3CEF26-8C26-41EF-8A2A-C66C46B5C70F}|Challenge.API.csproj|solutionrelative:controllers\\consultacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DentistaController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.API\\Controllers\\DentistaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DentistaController.cs",
+              "ToolTip": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.API\\Controllers\\DentistaController.cs",
+              "RelativeToolTip": "Controllers\\DentistaController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAqwDUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T17:08:10.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.API\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.API\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T17:08:07.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConsultaController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.API\\Controllers\\ConsultaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ConsultaController.cs",
+              "ToolTip": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.API\\Controllers\\ConsultaController.cs",
+              "RelativeToolTip": "Controllers\\ConsultaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T16:58:44.332Z",
+              "EditorCaption": ""
             }
           ]
         }

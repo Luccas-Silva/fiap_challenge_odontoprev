@@ -1,13 +1,18 @@
-﻿namespace Challenge.API.Domains.Entities
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Challenge.API.Domains.Entities
 {
+    [Table("Cliente")]
     public class ClienteEntity
     {
-        private string cpf_cnpj { get; set; }
-        private string cep { get; set; }
-        private string tipoPlano { get; set; }
+        [Key]
+        public string cpf_cnpj { get; set; }
+        public string cep { get; set; }
+        public string tipoPlano { get; set; }
 
-        private UsuarioEntity usuario { get; set; }
-        private List<ConsultaEntity> consultas { get; set; } 
+        public UsuarioEntity usuario { get; set; }
+        public List<ConsultaEntity> consultas { get; set; } 
 
     }
 }

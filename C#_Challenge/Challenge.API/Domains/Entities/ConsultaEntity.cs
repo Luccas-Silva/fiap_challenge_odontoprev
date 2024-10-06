@@ -1,15 +1,19 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Challenge.API.Domains.Entities
 {
+    [Table("Consulta")]
     public class ConsultaEntity
     {
-        private string idConsulta;
-        private Date dateConsulta;
-        private string tipoConsulta;
-        private double valorMedioConsulta;
+        [Key]
+        public string idConsulta { get; set; }
+        public Date dateConsulta { get; set; }
+        public string tipoConsulta { get; set; }
+        public double valorMedioConsulta { get; set; }
 
-        private DentistaEntity dentista { get; set; }
-        private ClienteEntity cliente { get; set; }
+        public DentistaEntity dentista { get; set; }
+        public ClienteEntity cliente { get; set; }
     }
 }
