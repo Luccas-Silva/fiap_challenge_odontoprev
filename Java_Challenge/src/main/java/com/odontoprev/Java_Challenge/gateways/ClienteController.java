@@ -27,9 +27,9 @@ public class ClienteController {
     public ResponseEntity<Map<String, String>> comandosCliente() {
 
         Map<String, String> comandos = Map.of(
-                "Listar Clientes", "/dentistas",
-                "Obter Cliente", "/{dentistaId}",
-                "Deletar Cliente", "/{dentistaId}",
+                "Listar Clientes", "/clientes",
+                "Obter Cliente", "/{clienteId}",
+                "Deletar Cliente", "/{clienteId}",
                 "Criar Cliente", " "
         );
         return ResponseEntity.ok(comandos);

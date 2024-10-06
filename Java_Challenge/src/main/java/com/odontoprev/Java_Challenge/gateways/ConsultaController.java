@@ -25,9 +25,9 @@ public class ConsultaController {
     public ResponseEntity<Map<String, String>> comandosConsulta() {
 
         Map<String, String> comandos = Map.of(
-                "Listar Consultas", "/dentistas",
-                "Obter Consulta", "/{dentistaId}",
-                "Deletar Consulta", "/{dentistaId}",
+                "Listar Consultas", "/consultas",
+                "Obter Consulta", "/{consultaId}",
+                "Deletar Consulta", "/{consultaId}",
                 "Criar Consulta", " "
         );
         return ResponseEntity.ok(comandos);

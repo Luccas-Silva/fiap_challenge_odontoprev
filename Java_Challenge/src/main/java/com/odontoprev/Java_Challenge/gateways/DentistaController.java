@@ -23,7 +23,6 @@ public class DentistaController {
 
     @GetMapping
     public ResponseEntity<Map<String, String>> comandosDentista() {
-
         Map<String, String> comandos = Map.of(
                 "Listar Dentistas", "/dentistas",
                 "Obter Dentista", "/{dentistaId}",
