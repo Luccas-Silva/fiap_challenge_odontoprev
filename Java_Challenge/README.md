@@ -12,7 +12,7 @@
 - [Instrução para rodar a aplicação](#instrução-para-rodar-a-aplicação)
 - [Listagem de endpoints (Doc API)](#listagem-de-endpoints-doc-api)
 - [Documento de teste via Postman](#documento-de-teste-via-postman)
-- [Link Vídeo da Proposta Tecnológica](#link-vídeo-da-proposta-tecnológica)
+- [Link Vídeo da Proposta Tecnológica](#vídeo-da-proposta-tecnológica)
 
 
 ## Objetivo do Projeto
