@@ -1,6 +1,8 @@
-﻿namespace Challenge.API.Infrastructure.Data.Repositories
+﻿using Challenge.API.Domains.Interfaces;
+
+namespace Challenge.API.Infrastructure.Data.Repositories
 {
-    public class ClienteRepository
+    public class ClienteRepository : IClienteRepository
     {
     }
 }

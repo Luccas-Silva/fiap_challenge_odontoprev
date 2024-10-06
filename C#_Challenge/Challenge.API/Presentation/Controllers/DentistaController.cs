@@ -3,16 +3,16 @@ using Challenge.API.Infrastructure.Data.AppData;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Challenge.API.Controllers
+namespace Challenge.API.Presentation.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class DentistaController : ControllerBase
     {
-        
+
         private readonly ApplicationContext _context;
 
-        public DentistaController(ApplicationContext _context) 
+        public DentistaController(ApplicationContext _context)
         {
             _context = _context;
         }
@@ -52,7 +52,7 @@ namespace Challenge.API.Controllers
         {
             var dentista = _context.Dentista.FirstOrDefault(x => x.cpf_cnpj == cpf_cnpj);
 
-            if (dentista is not null) 
+            if (dentista is not null)
             {
                 _context.Dentista.Remove(dentista);
                 _context.SaveChanges();
