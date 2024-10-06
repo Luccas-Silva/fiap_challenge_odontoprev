@@ -13,10 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DB3CEF26-8C26-41EF-8A2A-C66C46B5C70F}|Challenge.API.csproj|c:\\users\\lucccas silva\\onedrive\\\u00E1rea de trabalho\\programas\\fiap_challenge_odontoprev\\c#_challenge\\challenge.api\\controllers\\dentistacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB3CEF26-8C26-41EF-8A2A-C66C46B5C70F}|Challenge.API.csproj|solutionrelative:controllers\\dentistacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB3CEF26-8C26-41EF-8A2A-C66C46B5C70F}|Challenge.API.csproj|c:\\users\\lucccas silva\\onedrive\\\u00E1rea de trabalho\\programas\\fiap_challenge_odontoprev\\c#_challenge\\challenge.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB3CEF26-8C26-41EF-8A2A-C66C46B5C70F}|Challenge.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAADwvwoAAACxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T19:21:16.585Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -55,8 +38,7 @@
               "RelativeToolTip": "Controllers\\DentistaController.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAYwB0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T19:09:47.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T19:09:47.159Z"
             },
             {
               "$type": "Document",
@@ -79,7 +61,7 @@
               "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
               "ToolTip": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.API\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "Controllers\\ClienteController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T19:09:45.591Z",
               "EditorCaption": ""
