@@ -9,7 +9,7 @@
 - [Objetivo do Projeto](#objetivo-do-projeto)
 - [Diagrama de Classes](#diagrama-de-classes)
 - [Diagrama de Relacionamento (DER)](#diagrama-de-relacionamento-der)
-- [Link Vídeo da Proposta Tecnológica](#link-vídeo-da-proposta-tecnológica)
+- [Vídeo da Proposta Tecnológica](#vídeo-da-proposta-tecnológica)
 
 
 ## Objetivo do Projeto
