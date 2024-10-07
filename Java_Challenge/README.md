@@ -12,7 +12,6 @@
 - [Instrução para rodar a aplicação](#instrução-para-rodar-a-aplicação)
 - [Listagem de endpoints (Doc API)](#listagem-de-endpoints-doc-api)
 - [Documento de teste via Postman](#documento-de-teste-via-postman)
-- [Vídeo da Proposta Tecnológica](#vídeo-da-proposta-tecnológica)
 
 ##	Projeto FairyTooth: Plataforma de Gestão da Saúde Bucal Personalizada
 A proposta é desenvolver uma plataforma digital que centralize as informações dos pacientes, integrando dados clínicos, históricos de tratamentos, hábitos de vida e respostas a questionários de saúde bucal. Essa plataforma funcionaria como um verdadeiro "assistente pessoal" para a saúde bucal, oferecendo:
@@ -77,9 +76,6 @@ Após realizar as alterações, salve o arquivo e execute a aplicação. A aplic
 * **GET /consulta/{consultaId}**: Obter Consulta
 * **POST /consulta:** Criar Consulta
 * **DELETE /consulta/{consultaId}**: Deletar Consulta
-
-## Vídeo da Proposta Tecnológica
-### Link:
 
 ## Documento de teste via Postman   
 ### Link: https://documenter.getpostman.com/view/20953146/2sAXxMgZcE
