@@ -9,8 +9,6 @@
 - [Objetivo do Projeto](#projeto-fairytooth-plataforma-de-gestão-da-saúde-bucal-personalizada)
 - [Diagrama de Classes](#diagrama-de-classes)
 - [Diagrama de Relacionamento (DER)](#diagrama-de-relacionamento-der)
-- [Vídeo da Proposta Tecnológica](#vídeo-da-proposta-tecnológica)
-
 
 ## Projeto FairyTooth: Plataforma de Gestão da Saúde Bucal Personalizada
 A proposta é desenvolver uma plataforma digital que centralize as informações dos pacientes, integrando dados clínicos, históricos de tratamentos, hábitos de vida e respostas a questionários de saúde bucal. Essa plataforma funcionaria como um verdadeiro "assistente pessoal" para a saúde bucal, oferecendo:
@@ -32,6 +30,3 @@ A proposta é desenvolver uma plataforma digital que centralize as informações
 
 ![image](https://github.com/user-attachments/assets/8500491f-b4c6-4a5a-b967-79d696ac435c)
 ![image](https://github.com/user-attachments/assets/0d938554-7ec9-4c11-bc24-2177c1ec5a76)
-
-## Vídeo da Proposta Tecnológica
-### Link:
