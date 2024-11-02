@@ -6,11 +6,13 @@ import com.odontoprev.Java_Challenge.gateways.requests.ClientePatchCelular;
 import com.odontoprev.Java_Challenge.gateways.requests.ClientePatchTipoPlano;
 import com.odontoprev.Java_Challenge.gateways.requests.ClientePatchEmail;
 import lombok.RequiredArgsConstructor;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.Link;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -25,7 +27,6 @@ public class ClienteController {
 
     @GetMapping
     public ResponseEntity<Map<String, String>> comandosCliente() {
-
         Map<String, String> comandos = Map.of(
                 "Listar Clientes", "/clientes",
                 "Obter Cliente", "/{clienteId}",
