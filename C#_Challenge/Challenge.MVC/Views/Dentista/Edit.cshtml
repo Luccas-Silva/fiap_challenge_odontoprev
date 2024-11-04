@@ -29,10 +29,10 @@
                 <input asp-for="tipoClinica" class="form-control" />
                 <span asp-validation-for="tipoClinica" class="text-danger"></span>
             </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="alvaraFuncionamento" /> @Html.DisplayNameFor(model => model.alvaraFuncionamento)
-                </label>
+            <div class="form-group">
+                <label asp-for="alvaraFuncionamento" class="control-label"></label>
+                <input asp-for="alvaraFuncionamento" class="form-control" />
+                <span asp-validation-for="alvaraFuncionamento" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="siteRedesSocial" class="control-label"></label>

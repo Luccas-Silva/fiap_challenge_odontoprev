@@ -54,7 +54,7 @@ namespace Challenge.MVC.Migrations
                     cepClinica = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
                     nomeClinica = table.Column<string>(type: "NVARCHAR2(100)", maxLength: 100, nullable: false),
                     tipoClinica = table.Column<string>(type: "NVARCHAR2(50)", maxLength: 50, nullable: false),
-                    alvaraFuncionamento = table.Column<bool>(type: "BOOLEAN", nullable: false),
+                    alvaraFuncionamento = table.Column<string>(type: "NVARCHAR2(1)", nullable: false),
                     siteRedesSocial = table.Column<string>(type: "NVARCHAR2(100)", maxLength: 100, nullable: false),
                     usuarioidUsuario = table.Column<string>(type: "NVARCHAR2(450)", nullable: false)
                 },

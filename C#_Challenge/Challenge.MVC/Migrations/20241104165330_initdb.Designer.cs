@@ -12,7 +12,7 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace Challenge.MVC.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20241104162352_initdb")]
+    [Migration("20241104165330_initdb")]
     partial class initdb
     {
         /// <inheritdoc />
@@ -88,8 +88,9 @@ namespace Challenge.MVC.Migrations
                     b.Property<string>("cpf_cnpj")
                         .HasColumnType("NVARCHAR2(450)");
 
-                    b.Property<bool>("alvaraFuncionamento")
-                        .HasColumnType("BOOLEAN");
+                    b.Property<string>("alvaraFuncionamento")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(1)");
 
                     b.Property<string>("cepClinica")
                         .IsRequired()

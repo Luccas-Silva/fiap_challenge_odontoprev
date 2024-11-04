@@ -85,8 +85,9 @@ namespace Challenge.MVC.Migrations
                     b.Property<string>("cpf_cnpj")
                         .HasColumnType("NVARCHAR2(450)");
 
-                    b.Property<bool>("alvaraFuncionamento")
-                        .HasColumnType("BOOLEAN");
+                    b.Property<string>("alvaraFuncionamento")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(1)");
 
                     b.Property<string>("cepClinica")
                         .IsRequired()

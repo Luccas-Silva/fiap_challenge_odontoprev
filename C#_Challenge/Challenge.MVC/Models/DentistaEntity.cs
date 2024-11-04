@@ -28,7 +28,7 @@ namespace Challenge.MVC.Models
 
         [Required(ErrorMessage = "O Campo Alvara de Funcionamento e Obrigatorio")]
         [DisplayName("Alvara de Funcionamento")]
-        public required bool alvaraFuncionamento { get; set; }
+        public required char alvaraFuncionamento { get; set; }
 
         [DisplayName("Site - Redes Socia")]
         [StringLength(100)]

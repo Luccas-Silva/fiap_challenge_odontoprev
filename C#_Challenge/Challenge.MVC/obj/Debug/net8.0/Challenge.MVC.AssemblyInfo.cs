@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Challenge.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72a8f30c2cd7d5fdc512a9328aff163acd3198b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6097d3dd7911bb3b4c13c029a147ad8c19a58b3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Challenge.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Challenge.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
