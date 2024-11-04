@@ -1,0 +1,55 @@
+﻿@model Challenge.MVC.Models.DentistaEntity
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>DentistaEntity</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="cpf_cnpj" />
+            <div class="form-group">
+                <label asp-for="cepClinica" class="control-label"></label>
+                <input asp-for="cepClinica" class="form-control" />
+                <span asp-validation-for="cepClinica" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nomeClinica" class="control-label"></label>
+                <input asp-for="nomeClinica" class="form-control" />
+                <span asp-validation-for="nomeClinica" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tipoClinica" class="control-label"></label>
+                <input asp-for="tipoClinica" class="form-control" />
+                <span asp-validation-for="tipoClinica" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="alvaraFuncionamento" /> @Html.DisplayNameFor(model => model.alvaraFuncionamento)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="siteRedesSocial" class="control-label"></label>
+                <input asp-for="siteRedesSocial" class="form-control" />
+                <span asp-validation-for="siteRedesSocial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

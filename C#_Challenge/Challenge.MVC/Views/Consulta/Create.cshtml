@@ -1,0 +1,49 @@
+﻿@model Challenge.MVC.Models.ConsultaEntity
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>ConsultaEntity</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="idConsulta" class="control-label"></label>
+                <input asp-for="idConsulta" class="form-control" />
+                <span asp-validation-for="idConsulta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dateConsulta" class="control-label"></label>
+                <input asp-for="dateConsulta" class="form-control" />
+                <span asp-validation-for="dateConsulta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tipoConsulta" class="control-label"></label>
+                <input asp-for="tipoConsulta" class="form-control" />
+                <span asp-validation-for="tipoConsulta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="valorMedioConsulta" class="control-label"></label>
+                <input asp-for="valorMedioConsulta" class="form-control" />
+                <span asp-validation-for="valorMedioConsulta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

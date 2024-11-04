@@ -1,7 +1,15 @@
+using Challenge.MVC.AppData;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Configuracao da string de conexao
+builder.Services.AddDbContext<ApplicationContext>(options => {
+    options.UseOracle("Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=oracle.fiap.com.br)(PORT=1521))) (CONNECT_DATA=(SERVER=DEDICATED)(SID=ORCL)));User Id=rm552890;Password=130604;");
+});
 
 var app = builder.Build();
 

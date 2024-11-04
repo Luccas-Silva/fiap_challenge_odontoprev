@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Challenge.MVC.Models
 {
 
-    [Table("Consulta")]
+    [Table("tb_Consulta")]
     public class ConsultaEntity
     {
         [Key] 
