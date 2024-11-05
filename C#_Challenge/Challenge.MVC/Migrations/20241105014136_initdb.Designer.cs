@@ -12,7 +12,7 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace Challenge.MVC.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20241104165330_initdb")]
+    [Migration("20241105014136_initdb")]
     partial class initdb
     {
         /// <inheritdoc />

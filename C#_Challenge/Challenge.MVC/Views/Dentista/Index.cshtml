@@ -5,10 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Dentista</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-outline-success fw-bold" asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -50,9 +50,9 @@
                 @Html.DisplayFor(modelItem => item.siteRedesSocial)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.cpf_cnpj">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.cpf_cnpj">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.cpf_cnpj">Delete</a>
+                    <a class="btn btn-outline-warning fw-bold" asp-action="Edit" asp-route-id="@item.cpf_cnpj">Edit</a> |
+                    <a class="btn btn-outline-info fw-bold" asp-action="Details" asp-route-id="@item.cpf_cnpj">Details</a> |
+                    <a class="btn btn-outline-danger fw-bold" asp-action="Delete" asp-route-id="@item.cpf_cnpj">Delete</a>
             </td>
         </tr>
 }
