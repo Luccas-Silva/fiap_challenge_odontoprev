@@ -6170,24 +6170,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Softwares\\Nuget": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Lucccas Silva\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\labsfiap\\Downloads\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.MVC\\Challenge.MVC.csproj",
+      "projectUniqueName": "C:\\Users\\Lucccas Silva\\OneDrive\\Área de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.MVC\\Challenge.MVC.csproj",
       "projectName": "Challenge.MVC",
-      "projectPath": "C:\\Users\\labsfiap\\Downloads\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.MVC\\Challenge.MVC.csproj",
-      "packagesPath": "C:\\Softwares\\Nuget",
-      "outputPath": "C:\\Users\\labsfiap\\Downloads\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.MVC\\obj\\",
+      "projectPath": "C:\\Users\\Lucccas Silva\\OneDrive\\Área de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.MVC\\Challenge.MVC.csproj",
+      "packagesPath": "C:\\Users\\Lucccas Silva\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lucccas Silva\\OneDrive\\Área de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.MVC\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "c:\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Lucccas Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6257,7 +6252,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
