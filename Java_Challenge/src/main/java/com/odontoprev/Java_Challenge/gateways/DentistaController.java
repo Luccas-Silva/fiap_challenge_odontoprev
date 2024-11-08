@@ -5,6 +5,7 @@ import com.odontoprev.Java_Challenge.domains.Consulta;
 import com.odontoprev.Java_Challenge.domains.Dentista;
 import com.odontoprev.Java_Challenge.gateways.requests.*;
 import lombok.RequiredArgsConstructor;
+import org.springframework.hateoas.EntityModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +13,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RestController
 @RequestMapping("/dentista")
@@ -22,14 +26,25 @@ public class DentistaController {
     private final DentistaRepository dentistaRepository;
 
     @GetMapping
-    public ResponseEntity<Map<String, String>> comandosDentista() {
+    public ResponseEntity<EntityModel<Map<String, String>>> comandosDentista() {
         Map<String, String> comandos = Map.of(
                 "Listar Dentistas", "/dentistas",
                 "Obter Dentista", "/{dentistaId}",
                 "Deletar Dentista", "/{dentistaId}",
-                "Criar Dentista", " "
+                "Criar Dentista", "/"
         );
-        return ResponseEntity.ok(comandos);
+
+        EntityModel<Map<String, String>> entityModel = EntityModel.of(comandos);
+
+        // Add self link
+        entityModel.add(linkTo(methodOn(DentistaController.class).comandosDentista()).withSelfRel());
+
+        // Add links to other relevant endpoints
+        entityModel.add(linkTo(methodOn(DentistaController.class).getListDentista()).withRel("listar-dentistas"));
+        entityModel.add(linkTo(methodOn(DentistaController.class).getDentista("{dentistaId}")).withRel("obter-dentista"));
+        entityModel.add(linkTo(methodOn(DentistaController.class).deleteDentista("{dentistaId}")).withRel("deletar-dentista"));
+
+        return ResponseEntity.ok(entityModel);
     }
 
     @GetMapping("/dentistas")

@@ -5,6 +5,7 @@ import com.odontoprev.Java_Challenge.domains.Consulta;
 import com.odontoprev.Java_Challenge.domains.Dentista;
 import com.odontoprev.Java_Challenge.gateways.requests.*;
 import lombok.RequiredArgsConstructor;
+import org.springframework.hateoas.EntityModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +13,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RestController
 @RequestMapping("/consulta")
@@ -22,15 +26,26 @@ public class ConsultaController {
     private final ConsultaRepository consultaRepository;
 
     @GetMapping
-    public ResponseEntity<Map<String, String>> comandosConsulta() {
+    public ResponseEntity<EntityModel<Map<String, String>>> comandosConsulta() {
 
         Map<String, String> comandos = Map.of(
                 "Listar Consultas", "/consultas",
                 "Obter Consulta", "/{consultaId}",
                 "Deletar Consulta", "/{consultaId}",
-                "Criar Consulta", " "
+                "Criar Consulta", "/"
         );
-        return ResponseEntity.ok(comandos);
+
+        EntityModel<Map<String, String>> entityModel = EntityModel.of(comandos);
+
+        // Add self link
+        entityModel.add(linkTo(methodOn(ConsultaController.class).comandosConsulta()).withSelfRel());
+
+        // Add links to other relevant endpoints
+        entityModel.add(linkTo(methodOn(ConsultaController.class).getListConsultas()).withRel("listar-consultas"));
+        entityModel.add(linkTo(methodOn(ConsultaController.class).getConsulta("{consultaId}")).withRel("obter-consulta"));
+        entityModel.add(linkTo(methodOn(ConsultaController.class).deleteConsulta("{consultaId}")).withRel("deletar-consulta"));
+
+        return ResponseEntity.ok(entityModel);
     }
 
     @GetMapping("/consultas")

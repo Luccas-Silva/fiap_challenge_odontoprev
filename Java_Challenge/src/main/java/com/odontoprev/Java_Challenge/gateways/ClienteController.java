@@ -17,6 +17,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
+
 @RestController
 @RequestMapping("/cliente")
 @RequiredArgsConstructor
@@ -26,14 +29,25 @@ public class ClienteController {
     private final ClienteRepository clienteRepository;
 
     @GetMapping
-    public ResponseEntity<Map<String, String>> comandosCliente() {
+    public ResponseEntity<EntityModel<Map<String, String>>> comandosCliente() {
         Map<String, String> comandos = Map.of(
                 "Listar Clientes", "/clientes",
                 "Obter Cliente", "/{clienteId}",
                 "Deletar Cliente", "/{clienteId}",
-                "Criar Cliente", " "
+                "Criar Cliente", "/"
         );
-        return ResponseEntity.ok(comandos);
+
+        EntityModel<Map<String, String>> entityModel = EntityModel.of(comandos);
+
+        // Add self link
+        entityModel.add(linkTo(methodOn(ClienteController.class).comandosCliente()).withSelfRel());
+
+        // Add links to other relevant endpoints
+        entityModel.add(linkTo(methodOn(ClienteController.class).getListClientes()).withRel("listar-clientes"));
+        entityModel.add(linkTo(methodOn(ClienteController.class).getCliente("{clienteId}")).withRel("obter-cliente"));
+        entityModel.add(linkTo(methodOn(ClienteController.class).deleteCliente("{clienteId}")).withRel("deletar-cliente"));
+
+        return ResponseEntity.ok(entityModel);
     }
 
     @GetMapping("/clientes")
@@ -47,6 +61,7 @@ public class ClienteController {
         Optional<Cliente> optionalCliente = clienteRepository.findById(clienteId);
         return ResponseEntity.ok(optionalCliente);
     }
+
 
     @PatchMapping("/{clienteId}/email")
     public ResponseEntity<ClientePatchEmail> patchEmail(@PathVariable String clienteId, @RequestBody ClientePatchEmail email) {
