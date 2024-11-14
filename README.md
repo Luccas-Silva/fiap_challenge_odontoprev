@@ -1,10 +1,5 @@
 # Fiap - Challenge Odontoprev 
 
-### Colaboradores
-- Lucca Augusto Matteoni – RM 98146
-- Luccas dos Anjos Correria da Silva – RM 552890
-- Bruno Burian – RM 552863
-
 ## Sumário
 - [Objetivo do Projeto](#projeto-fairytooth-plataforma-de-gestão-da-saúde-bucal-personalizada)
 - [Diagrama de Classes](#diagrama-de-classes)
