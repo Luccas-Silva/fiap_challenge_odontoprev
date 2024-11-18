@@ -72,9 +72,3 @@ Após realizar as alterações, salve o arquivo e execute a aplicação. A aplic
 * **GET /consulta/{consultaId}**: Obter Consulta
 * **POST /consulta:** Criar Consulta
 * **DELETE /consulta/{consultaId}**: Deletar Consulta
-
-## Documento de teste via Postman   
-### Link: https://documenter.getpostman.com/view/20953146/2sAXxMgZcE
-
-
-
