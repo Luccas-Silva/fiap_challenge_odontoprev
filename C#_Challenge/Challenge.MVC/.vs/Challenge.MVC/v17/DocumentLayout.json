@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18A609A3-28B0-4000-816B-BCD6A8741A7B}|Challenge.MVC.csproj|c:\\users\\lucccas silva\\onedrive\\\u00E1rea de trabalho\\programas\\fiap_challenge_odontoprev\\c#_challenge\\challenge.mvc\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{18A609A3-28B0-4000-816B-BCD6A8741A7B}|Challenge.MVC.csproj|solutionrelative:views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{18A609A3-28B0-4000-816B-BCD6A8741A7B}|Challenge.MVC.csproj|c:\\users\\lucccas silva\\onedrive\\\u00E1rea de trabalho\\programas\\fiap_challenge_odontoprev\\c#_challenge\\challenge.mvc\\views\\usuario\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18A609A3-28B0-4000-816B-BCD6A8741A7B}|Challenge.MVC.csproj|solutionrelative:views\\usuario\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.MVC\\Views\\Cliente\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cliente\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.MVC\\Views\\Cliente\\Index.cshtml",
-              "RelativeToolTip": "Views\\Cliente\\Index.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAcAAAAsAAAA",
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.MVC\\Views\\Usuario\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuario\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Lucccas Silva\\OneDrive\\\u00C1rea de Trabalho\\Programas\\fiap_challenge_odontoprev\\C#_Challenge\\Challenge.MVC\\Views\\Usuario\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Usuario\\Delete.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACoAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T03:29:30.349Z",
+              "WhenOpened": "2024-11-21T14:20:47.724Z",
               "EditorCaption": ""
             }
           ]
