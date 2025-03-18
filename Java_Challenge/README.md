@@ -7,7 +7,6 @@
 - [Diagrama de Relacionamento (DER)](#diagrama-de-relacionamento-der)
 - [Instrução para rodar a aplicação](#instrução-para-rodar-a-aplicação)
 - [Listagem de endpoints (Doc API)](#listagem-de-endpoints-doc-api)
-- [Documento de teste via Postman](#documento-de-teste-via-postman)
 
 ##	Projeto FairyTooth: Plataforma de Gestão da Saúde Bucal Personalizada
 A proposta é desenvolver uma plataforma digital que centralize as informações dos pacientes, integrando dados clínicos, históricos de tratamentos, hábitos de vida e respostas a questionários de saúde bucal. Essa plataforma funcionaria como um verdadeiro "assistente pessoal" para a saúde bucal, oferecendo:
